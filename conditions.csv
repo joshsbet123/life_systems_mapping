@@ -1,0 +1,5 @@
+condition_id,label,definition,notes
+grief,Grief,Emotional response to loss; no defined end state.,Not a need. Affects capability at every touchpoint; an FCA vulnerability driver.
+financial_vulnerability,Financial vulnerability,Reduced income or increased outgoings following the death without a defined resolution point.,Strongest for partner variants. FCA vulnerability driver.
+social_isolation,Social isolation,Loss of the deceased's social role with no defined resolution.,Strongest for partner variants and 65+.
+changed_household_composition,Changed household composition,Household shrinks or dissolves; ongoing.,Structural condition for partner variants; drives downsizing and care moves.

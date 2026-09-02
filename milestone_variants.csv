@@ -1,0 +1,33 @@
+class_id,variant_id,label,agency,lead_time,form,window_months,unit,subject,visibility,recurrence,modal_age,evidence_status,notes
+own_birth,own_birth.default,Own birth,imposed,planned,event,0,household,household,registered,once,0-17,asserted,Household acts; person does not. Kept for cradle end.
+leaving_home,leaving_home.first,Leaving parental home for the first time,chosen,planned,transition,3,individual,self,invisible,once,18-29,asserted,University and non-university merged; split if footprint differs.
+first_tenancy,first_tenancy.default,First private or social tenancy,chosen,planned,event,1,household,self,partial,once,18-29,asserted,Partial via deposit protection and council tax; RRA thread from other chat lands here.
+first_job,first_job.default,First paid employment,chosen,planned,event,1,individual,self,partial,once,18-29,asserted,Partial via PAYE / HMRC RTI.
+cohabiting,cohabiting.first,Moving in with a partner,chosen,planned,transition,3,dyad,self,partial,repeatable,18-29,asserted,Partial via loss of single-person council tax discount only.
+marriage_civil_partnership,marriage_civil_partnership.default,Marriage or civil partnership,chosen,planned,event,1,dyad,self,registered,repeatable,30-44,asserted,GRO registered.
+first_child,first_child.birth,First child by birth,chosen,planned,transition,12,household,self,registered,once,30-44,asserted,Nine-month run-up is planned by definition even if conception was not.
+first_child,first_child.adoption,First child by adoption,chosen,planned,transition,24,household,self,registered,once,30-44,asserted,Longer administrative tail.
+first_property_purchase,first_property_purchase.solo,First purchase alone,chosen,planned,event,3,individual,self,registered,once,30-44,asserted,Land Registry PPD.
+first_property_purchase,first_property_purchase.joint,First purchase with a partner,chosen,planned,event,3,dyad,self,registered,once,30-44,asserted,Land Registry PPD.
+first_property_purchase,first_property_purchase.family_assisted,First purchase funded partly by gift or inheritance,chosen,planned,event,3,individual,self,registered,once,30-44,asserted,Exists to carry bereavement -> inheritance -> purchase link. May belong as edge attribute; see codebook ambiguity 1.
+subsequent_home_move,subsequent_home_move.default,Home move after first purchase or tenancy,chosen,planned,event,3,household,self,registered,repeatable,30-44,asserted,Registered if owner-occupied; partial if rented.
+major_job_change,major_job_change.default,Job change or promotion,chosen,planned,event,1,individual,self,partial,repeatable,30-44,asserted,Partial via PAYE.
+redundancy,redundancy.consulted,Redundancy after consultation period,imposed,anticipated,event,6,individual,self,partial,repeatable,45-64,asserted,Partial via Universal Credit / JSA claims and HR1 notifications.
+redundancy,redundancy.sudden,Sudden job loss,imposed,shock,event,6,individual,self,partial,repeatable,45-64,asserted,Includes insolvency and dismissal.
+serious_illness_diagnosis,serious_illness_diagnosis.self,Own serious illness diagnosis,imposed,shock,transition,12,individual,self,invisible,repeatable,45-64,asserted,No public trace except benefits (PIP/ESA). Panel data only; see codebook ambiguity 3.
+becoming_carer,becoming_carer.parent,Becoming carer for a parent,imposed,anticipated,transition,36,individual,self,invisible,repeatable,45-64,asserted,Partial only if Carer's Allowance claimed; see codebook ambiguity 2.
+becoming_carer,becoming_carer.partner,Becoming carer for a partner,imposed,anticipated,transition,36,dyad,self,invisible,repeatable,65+,asserted,Often precedes bereavement.partner_anticipated.
+becoming_carer,becoming_carer.child,Becoming carer for a disabled child,imposed,shock,transition,120,household,self,partial,repeatable,30-44,asserted,Partial via DLA for children.
+divorce_separation,divorce_separation.initiator,Divorce or dissolution as initiator,chosen,planned,transition,12,dyad,self,registered,repeatable,30-44,asserted,Court registered. Agency mixed at class level; split resolves it.
+divorce_separation,divorce_separation.non_initiator,Divorce or dissolution as non-initiator,imposed,shock,transition,12,dyad,self,registered,repeatable,30-44,asserted,Lead time varies; shock is the modal case.
+divorce_separation,divorce_separation.cohabiting_split,Separation of cohabiting couple,mixed,anticipated,transition,6,dyad,self,invisible,repeatable,30-44,asserted,No legal process; arguably a separate class. See codebook ambiguity 5.
+bereavement,bereavement.parent_anticipated,Death of a parent after illness,imposed,anticipated,transition,12,individual,self,registered,repeatable,45-64,asserted,GRO death registration; probate; Tell Us Once. Anchor case.
+bereavement,bereavement.parent_sudden,Sudden death of a parent,imposed,shock,transition,12,individual,self,registered,repeatable,45-64,asserted,Same administrative tail; no pre-event signal.
+bereavement,bereavement.partner_anticipated,Death of a partner after illness,imposed,anticipated,transition,24,dyad,self,registered,repeatable,65+,asserted,Working-age cases behaviourally distinct; see codebook ambiguity 4.
+bereavement,bereavement.partner_sudden,Sudden death of a partner,imposed,shock,transition,24,dyad,self,registered,repeatable,65+,asserted,
+bereavement,bereavement.child,Death of a child,imposed,shock,transition,24,household,self,registered,repeatable,30-44,asserted,Includes stillbirth in registration terms.
+retirement,retirement.chosen,Planned retirement,chosen,planned,transition,6,individual,self,partial,once,65+,asserted,Partial via State Pension claim and PAYE cessation.
+retirement,retirement.forced,Retirement forced by health or redundancy,imposed,anticipated,transition,6,individual,self,partial,once,45-64,asserted,Overlaps redundancy and serious_illness_diagnosis.
+moving_into_care,moving_into_care.default,Moving into residential care,imposed,anticipated,transition,3,household,self,partial,once,65+,asserted,Partial via local authority needs assessment. Often triggers subsequent_home_move for the household.
+own_death,own_death.anticipated,Own death after illness,imposed,anticipated,event,0,household,household,registered,once,65+,asserted,Household acts; person does not. Mirror of bereavement variants.
+own_death,own_death.sudden,Own sudden death,imposed,shock,event,0,household,household,registered,once,65+,asserted,

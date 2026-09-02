@@ -1,0 +1,34 @@
+touchpoint_id,need_id,label,actor_type,sector,current_providers,mandatory,notes
+opg.lpa_registration,pre_death_planning,Register lasting power of attorney,state,government,Office of the Public Guardian,no,Registered with OPG; the one partial trace of pre-death planning.
+legal.will_drafting,pre_death_planning,Draft or update a will,professional_service,legal,Solicitors; will-writing firms; online will services,no,Unregulated will-writing market.
+funeral.prepaid_plan,pre_death_planning,Buy a pre-paid funeral plan,regulated_firm,funeral_death_services,Funeral plan providers (FCA regulated since 2022),no,
+gro.register_death,register_death,Register the death with the local registrar,state,government,General Register Office via local registrars,yes,
+funeral.director,arrange_funeral,Engage a funeral director,regulated_firm,funeral_death_services,Funeral directors (CMA order 2021),no,Direct cremation is the substitute.
+dwp.funeral_expenses_payment,arrange_funeral,Claim Funeral Expenses Payment,state,government,DWP,no,Means-tested; low uptake.
+dwp.tell_us_once,notify_state,Use Tell Us Once,state,government,DWP,no,Offered at registration; one step notifies most state bodies.
+hmrc.notify,notify_state,Notify HMRC separately,state,government,HMRC,yes,Covered by Tell Us Once if used.
+dvla.notify,notify_state,Notify DVLA of licence and vehicle,state,government,DVLA,yes,Covered by Tell Us Once if used.
+energy.bereavement_team,settle_household_accounts,Close or transfer energy account,regulated_firm,energy_utilities,Energy suppliers,yes,Supplier sees the death within weeks. Octopus footprint.
+telecoms.close_account,settle_household_accounts,Close or transfer phone and broadband,regulated_firm,telecoms_media,Telecoms providers,yes,
+water.close_account,settle_household_accounts,Close or transfer water account,regulated_firm,energy_utilities,Water companies,yes,
+insurance.cancel_policies,settle_household_accounts,Cancel or transfer insurance policies,regulated_firm,insurance,Insurers,yes,
+hmcts.probate_application,administer_estate,Apply for grant of probate,state,legal,HMCTS online and paper routes,conditional,Required if estate exceeds thresholds or includes property.
+legal.probate_solicitor,administer_estate,Instruct a solicitor or probate service,professional_service,legal,Solicitors; probate services; Octopus Legacy,no,Substitute for self-application. Octopus footprint via Legacy.
+hmrc.iht_return,administer_estate,Submit inheritance tax return,state,government,HMRC,conditional,
+bank.deceased_notification,settle_estate_debts,Notify banks and freeze accounts,regulated_firm,banking_credit,Banks; Death Notification Service,yes,DNS notifies multiple banks in one step.
+credit.notify_lenders,settle_estate_debts,Notify credit card and loan providers,regulated_firm,banking_credit,Lenders,yes,
+dwp.bereavement_support_payment,claim_entitlements,Claim Bereavement Support Payment,state,government,DWP,no,Partner variants only. 3-month window for full amount.
+pension.death_benefit_claim,claim_entitlements,Claim private pension death benefits,regulated_firm,pensions_investments,Pension providers; Pension Tracing Service,no,Untraced pensions are the unfinished-need case.
+insurance.life_claim,claim_entitlements,Make a life insurance claim,regulated_firm,insurance,Life insurers,no,
+employer.death_in_service,claim_entitlements,Claim death-in-service benefit,employer,employment,Employers via scheme trustees,no,Partner and child variants.
+insurance.unoccupied_property,secure_empty_property,Arrange unoccupied property insurance,regulated_firm,insurance,Home insurers,yes,Standard policies lapse after 30-60 days empty.
+council.class_f_exemption,secure_empty_property,Claim council tax Class F exemption,state,government,Local authorities,no,
+energy.empty_property_supply,secure_empty_property,Keep supply on for empty property,regulated_firm,energy_utilities,Energy suppliers,no,Second energy touchpoint; estate pays. Octopus footprint.
+conveyancer.probate_sale,dispose_or_transfer_property,Sell property via probate sale,professional_service,housing_property,Conveyancers; estate agents,conditional,
+landregistry.assent,dispose_or_transfer_property,Transfer title to beneficiary,state,housing_property,HM Land Registry,conditional,
+dvla.keeper_change,manage_vehicles,Transfer or scrap owned vehicle,state,government,DVLA,conditional,
+lessor.vehicle_return,manage_vehicles,Return or transfer leased vehicle,regulated_firm,transport_vehicle,Vehicle lessors incl. Octopus EV,conditional,Octopus footprint.
+insurance.vehicle_cancel,manage_vehicles,Cancel or transfer vehicle insurance,regulated_firm,insurance,Motor insurers,yes,
+employer.compassionate_leave,manage_employment_absence,Take compassionate leave,employer,employment,Employers,no,No statutory right except parental bereavement leave.
+bank.inheritance_deposit,receive_inheritance,Receive inherited cash,regulated_firm,banking_credit,Banks,no,Where FCA targeted support scenarios begin: cash holding after windfall.
+landregistry.inherited_property,receive_inheritance,Take title to inherited property,state,housing_property,HM Land Registry,conditional,

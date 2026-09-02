@@ -1,0 +1,10 @@
+edge_id,from_variant,to_variant,edge_type,lag_months,window_months,evidence_status,notes
+mm001,becoming_carer.parent,bereavement.parent_anticipated,precedes,36,36,asserted,Caring often ends in bereavement; the carer role is the earliest signal.
+mm002,serious_illness_diagnosis.self,own_death.anticipated,precedes,24,36,asserted,Mirror of the above from the dying person's side.
+mm003,bereavement.parent_anticipated,first_property_purchase.family_assisted,enables,12,24,asserted,Via receive_inheritance. The wealth-transfer edge.
+mm004,bereavement.parent_anticipated,subsequent_home_move.default,enables,12,24,asserted,Inheritance funds upsizing for existing owners.
+mm005,bereavement.partner_anticipated,subsequent_home_move.default,triggers,12,24,asserted,Downsizing after widowhood.
+mm006,bereavement.partner_anticipated,moving_into_care.default,triggers,12,36,asserted,Loss of informal carer for the survivor.
+mm007,bereavement.partner_anticipated,retirement.forced,triggers,0,12,asserted,Working-age widowhood; see codebook ambiguity 4.
+mm008,bereavement.parent_anticipated,becoming_carer.parent,triggers,0,6,asserted,Surviving parent needs care after loss of spouse-carer.
+mm009,first_property_purchase.joint,cohabiting.first,coincides,0,3,asserted,Frequently the same event.

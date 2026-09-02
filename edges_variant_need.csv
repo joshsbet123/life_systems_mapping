@@ -1,0 +1,26 @@
+edge_id,from_variant,to_need,trigger,condition,lag_months,window_months,evidence_status,notes
+vn001,bereavement.parent_anticipated,pre_death_planning,conditional,Prognosis known,-6,6,asserted,Negative lag: precedes the trigger date. Only anticipated variants carry this edge.
+vn002,bereavement.parent_anticipated,register_death,always,,0,0,asserted,
+vn003,bereavement.parent_anticipated,arrange_funeral,always,,0,1,asserted,
+vn004,bereavement.parent_anticipated,notify_state,always,,0,1,asserted,
+vn005,bereavement.parent_anticipated,settle_household_accounts,conditional,Parent lived alone or was account holder,0,2,asserted,Leading touchpoint for energy.
+vn006,bereavement.parent_anticipated,administer_estate,conditional,Estate above threshold or includes property,1,9,asserted,
+vn007,bereavement.parent_anticipated,settle_estate_debts,always,,0,3,asserted,
+vn008,bereavement.parent_anticipated,claim_entitlements,conditional,Pensions or life cover held,1,12,asserted,BSP not applicable for parent variants.
+vn009,bereavement.parent_anticipated,secure_empty_property,conditional,Parent owned and lived alone,0,12,asserted,
+vn010,bereavement.parent_anticipated,dispose_or_transfer_property,conditional,Property in estate,6,12,asserted,Depends on administer_estate reaching grant.
+vn011,bereavement.parent_anticipated,manage_vehicles,conditional,Vehicle held,0,2,asserted,
+vn012,bereavement.parent_anticipated,manage_employment_absence,always,,0,1,asserted,
+vn013,bereavement.parent_anticipated,receive_inheritance,conditional,Named beneficiary,9,12,asserted,Opens the edge to first_property_purchase.family_assisted.
+vn014,bereavement.parent_sudden,register_death,always,,0,0,asserted,Sudden variants carry every parent_anticipated edge except vn001; rows omitted here for brevity and should be added explicitly before validation.
+vn015,bereavement.partner_anticipated,pre_death_planning,conditional,Prognosis known,-6,6,asserted,
+vn016,bereavement.partner_anticipated,register_death,always,,0,0,asserted,
+vn017,bereavement.partner_anticipated,arrange_funeral,always,,0,1,asserted,
+vn018,bereavement.partner_anticipated,notify_state,always,,0,1,asserted,
+vn019,bereavement.partner_anticipated,settle_household_accounts,always,,0,3,asserted,Transfer rather than close; survivor becomes account holder. Different behaviour from parent variant.
+vn020,bereavement.partner_anticipated,administer_estate,conditional,Assets not jointly held,1,9,asserted,Joint tenancy and joint accounts bypass probate.
+vn021,bereavement.partner_anticipated,settle_estate_debts,always,,0,3,asserted,
+vn022,bereavement.partner_anticipated,claim_entitlements,always,,0,12,asserted,BSP applies; 3-month window.
+vn023,bereavement.partner_anticipated,dispose_or_transfer_property,conditional,Survivor chooses to move,12,24,asserted,Downsizing; links to subsequent_home_move.
+vn024,bereavement.partner_anticipated,manage_vehicles,conditional,Vehicle held,0,2,asserted,
+vn025,bereavement.partner_anticipated,manage_employment_absence,conditional,Survivor in work,0,3,asserted,

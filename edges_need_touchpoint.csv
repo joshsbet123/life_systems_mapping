@@ -1,0 +1,34 @@
+edge_id,need_id,touchpoint_id,edge_type,should_but_dont,do_but_shouldnt,driver_or_barrier,evidence_status,notes
+nt001,pre_death_planning,opg.lpa_registration,choice,Register LPA before capacity is lost,,Avoidance of mortality salience; cost,asserted,
+nt002,pre_death_planning,legal.will_drafting,choice,Make or update a will,Use unregulated will-writer without checking,Avoidance; low perceived urgency,asserted,
+nt003,pre_death_planning,funeral.prepaid_plan,choice,,Buy a plan with poor cover,Salesmanship at a vulnerable moment,asserted,
+nt004,register_death,gro.register_death,obligation,,,Statutory deadline drives completion,asserted,
+nt005,arrange_funeral,funeral.director,choice,Compare providers; consider direct cremation,Overspend under social pressure,Time pressure; grief; social norms,asserted,CMA found low price comparison.
+nt006,arrange_funeral,dwp.funeral_expenses_payment,choice,Claim if eligible,,Low awareness; complexity,asserted,
+nt007,notify_state,dwp.tell_us_once,choice,Use Tell Us Once at registration,Notify each body separately,Offered at registration; friction is minimal,asserted,
+nt008,notify_state,hmrc.notify,obligation,,,,asserted,
+nt009,notify_state,dvla.notify,obligation,,,,asserted,
+nt010,settle_household_accounts,energy.bereavement_team,obligation,Notify promptly; ask about estate liability and debt write-off,Keep paying from own funds; leave supply in deceased's name,Uncertainty about who is liable; avoidance,asserted,Supplier sees the death before probate exists.
+nt011,settle_household_accounts,telecoms.close_account,obligation,,Pay early termination fees that should be waived,Firm-side friction,asserted,
+nt012,settle_household_accounts,water.close_account,obligation,,,,asserted,
+nt013,settle_household_accounts,insurance.cancel_policies,obligation,Check for refunds due,,,asserted,
+nt014,administer_estate,hmcts.probate_application,obligation,Apply online early,,Complexity; fear of error,asserted,
+nt015,administer_estate,legal.probate_solicitor,choice,,Pay a percentage-fee service for a simple estate,Uncertainty; marketing at point of grief,asserted,
+nt016,administer_estate,hmrc.iht_return,obligation,,Miss the 6-month IHT payment deadline,Complexity; liquidity,asserted,
+nt017,settle_estate_debts,bank.deceased_notification,obligation,Use Death Notification Service,Notify each bank separately,Low awareness,asserted,
+nt018,settle_estate_debts,credit.notify_lenders,obligation,,Pay the deceased's debts personally,Misunderstanding of liability,asserted,
+nt019,claim_entitlements,dwp.bereavement_support_payment,choice,Claim within 3 months,,Low awareness of deadline,asserted,Partner variants only.
+nt020,claim_entitlements,pension.death_benefit_claim,choice,Trace all pensions,,Unknown pensions; complexity,asserted,Classic unfinished need.
+nt021,claim_entitlements,insurance.life_claim,choice,Check for policies the deceased held,,Unknown policies,asserted,
+nt022,claim_entitlements,employer.death_in_service,choice,,,,asserted,
+nt023,secure_empty_property,insurance.unoccupied_property,obligation,Arrange cover before standard policy lapses,Assume existing policy holds,Low awareness of 30-60 day clause,asserted,
+nt024,secure_empty_property,council.class_f_exemption,choice,Claim exemption,,Low awareness,asserted,
+nt025,secure_empty_property,energy.empty_property_supply,choice,Keep supply on at minimum,Disconnect and risk frost damage,Cost aversion,asserted,
+nt026,dispose_or_transfer_property,conveyancer.probate_sale,choice,,Sell quickly at a discount under pressure,Carrying costs; family pressure,asserted,
+nt027,dispose_or_transfer_property,landregistry.assent,obligation,,,,asserted,
+nt028,manage_vehicles,dvla.keeper_change,obligation,,,,asserted,
+nt029,manage_vehicles,lessor.vehicle_return,obligation,Ask about early termination waiver,Keep paying lease from own funds,Uncertainty about contract terms,asserted,
+nt030,manage_vehicles,insurance.vehicle_cancel,obligation,,Drive the deceased's car uninsured,Misunderstanding,asserted,
+nt031,manage_employment_absence,employer.compassionate_leave,choice,Take leave offered,Return too early,Norms; financial pressure,asserted,
+nt032,receive_inheritance,bank.inheritance_deposit,consequence,Consider use of windfall,Hold large cash balance long term,Inertia; loss aversion,asserted,FCA targeted support scenario.
+nt033,receive_inheritance,landregistry.inherited_property,consequence,,,,asserted,
