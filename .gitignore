@@ -4,3 +4,4 @@ data/raw/*
 !data/raw/.gitkeep
 graphify-out/
 .DS_Store
+.claude
