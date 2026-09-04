@@ -5,3 +5,4 @@ data/raw/*
 graphify-out/
 .DS_Store
 .claude
+*.code-workspace
